@@ -52,13 +52,13 @@ while(i<5):
     print(i)
     i+=1
 j=5
-while(j<10):
-    if(j==6):
-        pass
-    elif(j==7):
-        continue
-    print(j)
-    j+=1
+# while(j<10):
+#     if(j==6):
+#         pass
+#     elif(j==7):
+#         continue
+#     print(j)
+#     j+=1
 
 
 #for else loop concept
@@ -77,3 +77,32 @@ else:
     print("prime")
 #for loops else is executed only when the loop is terminated normally not by the break statement if it
 #gets terminated normally the else part gets executed and we can see that the number is prime ..
+
+#inbuilt and lamba functions
+#inbuilt-print,len,type,sum,max,min
+list2=[9,66,4,33,22,65,3,7,8,87]
+print(len(list2))
+print(min(list2))
+print(max(list2))
+print(sum(list2))
+print(abs(-10))
+print(round(3.1415129))
+print(pow(2,3))
+print(sorted(list2))
+
+#map
+def double(x):
+    return x*2
+result1 = map(double,list2)
+print(list(result1))
+#lambda functions
+square_fun= lambda x:x*x
+print(square_fun(5))
+#lambda arguments:expression
+list3 = [1,4,9,16,25,36,49,64,81,100]
+result2 = map(lambda x:x**0.5,list3)
+print(list(result2))
+#filter function used filters the elements based on the specific conditions
+result3 = filter(lambda x:x%2==0,list3)
+print(list(result3))
+
