@@ -1,0 +1,7 @@
+print("hello\nworld")
+print("hello\ttab")
+print("hello\\backlash")
+print("hello \'sinnge quote\'")
+print("hello\rcarriage return")
+print("hello\b backspace")
+print("hello\0null character")
