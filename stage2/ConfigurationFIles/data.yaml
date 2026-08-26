@@ -1,0 +1,9 @@
+name: amit
+age: 22
+skills:
+  - Python
+  - DSA
+  - ML
+address:
+  city: Gandhidham
+  state: Gujarat
