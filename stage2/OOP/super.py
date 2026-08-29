@@ -17,3 +17,4 @@ class SmartPhone(Phone):
         print("buying a smartphone")
         super().buy()#access parents methods and constructor not attributes
 s = SmartPhone(15000,"Xioami","Redmi Note 11",12,256)
+s.buy()

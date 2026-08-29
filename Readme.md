@@ -31,8 +31,8 @@ Code, exercises, and mini-projects from each stage are organized here as I progr
 
 ## 👤 Author
 
-**Amit**
-Computer Science Undergraduate · Gujarat Technological University (GEC Modasa)
+**Amit Yadav**
+Computer Engineering Undergraduate · Gujarat Technological University (GEC Modasa)
 
 <div align="center">
 
