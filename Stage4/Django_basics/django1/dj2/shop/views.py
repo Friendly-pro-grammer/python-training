@@ -4,4 +4,4 @@ from django.http import HttpResponse
 def Home(request):
     return HttpResponse("Shop Home page")
 def Products(request):
-    return HttpResponse("Shop Products Page")
+    return HttpResponse ("Shop Products Page")
