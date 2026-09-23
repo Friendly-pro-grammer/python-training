@@ -15,7 +15,7 @@ urlpatterns =[
     ),
     path(
         "logout/",
-        views.logout,
+        views.logout_user,
         name="logout"
     ),
     path(
@@ -32,5 +32,15 @@ urlpatterns =[
     "csrf/",
     views.csrf_token,
     name="csrf-token"
+        ),
+    path(
+        "manager-dashboard/",
+        views.manager_dashboard,
+        name="manager-dashboard"
     ),
+    path(
+        "admin-dashboard",
+        views.admin_dashboard,
+        name="admin-dashboard"
+    )
 ]

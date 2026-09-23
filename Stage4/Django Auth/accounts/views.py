@@ -5,7 +5,7 @@ from django.contrib.auth import get_user_model
 import json
 from django.contrib.auth import authenticate, login ,logout
 from django.views.decorators.csrf import ensure_csrf_cookie
-
+from .decorators import role_required
 User = get_user_model()
 
 def register(request):
@@ -108,4 +108,21 @@ def protected_endpoint(request):
 def csrf_token(request):
     return JsonResponse({
         "message": "CSRF cookie set"
+    })
+
+@role_required("ADMIN","MANAGER")
+def manager_dashboard(request):
+    return JsonResponse({
+        "message": "Welcome to the manager dashboard",
+        "user": request.user.username,
+        "role": request.user.role
+    })
+
+@role_required("ADMIN")
+def admin_dashboard(request):
+
+    return JsonResponse({
+        "message": "Welcome to the admin dashboard",
+        "user": request.user.username,
+        "role": request.user.role
     })
